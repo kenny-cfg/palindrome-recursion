@@ -10,7 +10,7 @@ class NumberPalindromeTest {
     private final NumberPalindrome palindrome = new NumberPalindrome();
 
     @ParameterizedTest
-    @CsvSource({"abcba, true", "hello, false"})
+    @CsvSource({"abcba, true", "hello, false", "racecar, true"})
     void works(String source, boolean expected) {
         var actual = palindrome.isPalindrome(source);
 
